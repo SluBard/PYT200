@@ -9,7 +9,7 @@ def append(s,c):
     return s + c
 
 def insert(s,c,pos):
-    return s[0:pos] + c + s[pos:-1] #wrong
+    return s[0:pos] + c + s[pos:] #wrong
 
 def remove_non_ascii_letters(text):
     cleaned_text = ''
